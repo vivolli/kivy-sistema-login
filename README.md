@@ -1,69 +1,67 @@
-================================================================================
-                    SISTEMA DE LOGIN - VERSÃO EXECUTÁVEL
-================================================================================
+# Sistema de Login - Versão Executável
 
-INSTRUÇÕES DE USO:
+Bem-vindo à versão portátil do Sistema de Login. Este aplicativo foi compilado para facilitar o uso imediato, eliminando a necessidade de configurações de ambiente.
 
-1. Simplesmente execute o arquivo "SistemaLogin.exe"
-   - Não precisa instalar nada
-   - Não precisa ter Python instalado
-   - Funciona direto no Windows
-   - Funciona em qualquer pasta ou localização
+---
 
-2. Na primeira execução:
-   - O sistema cria automaticamente o arquivo de dados (users.txt)
-   - Clique em "Não tem uma conta? Bora criar!"
-   - Preencha os dados: Nome, Email e Senha
-   - Clique em "Enviar"
+## Instruções de Uso
 
-3. Para fazer login:
-   - Digite seu email e senha
-   - Clique em "Login"
+### 1. Inicialização
+* Execute o arquivo `SistemaLogin.exe`.
+* **Nota:** O software é totalmente portátil (não requer instalação, Python ou dependências externas). Funciona em qualquer diretório.
 
-4. Seus dados são salvos automaticamente
-   - Se o arquivo users.txt já existir, será usado
-   - Se não existir, será criado automaticamente na primeira execução
+### 2. Primeiro Acesso (Cadastro)
+Ao executar o sistema pela primeira vez, o banco de dados local será criado automaticamente.
+1.  Clique no botão **"Não tem uma conta? Bora criar!"**.
+2.  Preencha os campos solicitados: *Nome*, *Email* e *Senha*.
+3.  Clique em **"Enviar"**.
 
-================================================================================
+### 3. Realizando Login
+1.  Insira suas credenciais (Email e Senha) cadastradas anteriormente.
+2.  Clique em **"Login"**.
 
-INFORMAÇÕES IMPORTANTES:
+### 4. Armazenamento de Dados
+* Seus dados são salvos localmente em um arquivo gerado automaticamente chamado `users.txt`.
+* O sistema verifica a existência deste arquivo a cada execução para validar o login.
 
-- Este é um arquivo executável (.exe) e PODE gerar aviso de segurança
-  Isso é normal - o arquivo foi criado com PyInstaller e é totalmente seguro
-  
-- O arquivo foi criado do código fonte da sua aplicação
-  
-- Os dados são armazenados localmente no arquivo "users.txt"
+---
 
-- Se precisar limpar os dados, delete o arquivo "users.txt" e execute 
-  novamente
+## Informações Importantes & Segurança
 
-================================================================================
+> **Aviso de Antivírus:** Ao executar o arquivo `.exe`, o Windows ou seu antivírus pode exibir um alerta de segurança (como o *Windows SmartScreen*).
+>
+> * **Motivo:** Isso é um comportamento padrão para executáveis criados via *PyInstaller* que não possuem uma assinatura digital corporativa paga.
+> * **Ação:** O arquivo é seguro e gerado diretamente do código-fonte. Você pode permitir a execução com segurança.
 
-🔧 REQUISITOS DO SISTEMA:
+### Gerenciamento de Dados
+* **Limpeza:** Caso deseje resetar o sistema ou apagar todos os usuários, basta excluir o arquivo `users.txt` da pasta onde o executável está localizado. Um novo arquivo será criado na próxima execução.
 
-- Windows 7 ou superior (32 bits ou 64 bits)
-- Sem necessidade de instalar Python
-- Sem necessidade de instalar dependências
+---
 
-================================================================================
+## Requisitos do Sistema
 
-COMO COMPARTILHAR:
+* **Sistema Operacional:** Windows 7, 8, 10 ou 11 (32 ou 64 bits).
+* **Dependências:** Nenhuma (O interpretador Python já está embutido no executável).
 
-1. Envie para seus amigos:
-   - O arquivo "SistemaLogin.exe"
-   - Este arquivo "README.txt" (opcional, mas recomendado)
+---
 
-2. Seus amigos podem executar apenas clicando no .exe
+## Como Compartilhar
 
-3. IMPORTANTE: Se usar o mesmo .exe, os dados de login serão compartilhados!
-   Para dados separados, cada pessoa precisa de seu próprio .exe
+Para distribuir este software para amigos ou colegas:
 
-================================================================================
+1.  Envie o arquivo `SistemaLogin.exe`.
+2.  Recomenda-se enviar este arquivo de instruções (`README.md` ou `README.txt`) junto.
 
-👨‍💻 CRIADO COM:
-- Python 3.x
-- Kivy (Framework de Interface Gráfica)
-- PyInstaller (Conversor de Python para .exe)
+### Nota sobre Compartilhamento de Dados
+O banco de dados (`users.txt`) é local.
+* **Cenário A:** Se você enviar apenas o `.exe` para um amigo, ele criará o próprio banco de dados vazio no computador dele.
+* **Cenário B:** Se você enviar o `.exe` **E** o seu arquivo `users.txt`, o seu amigo terá acesso às contas que você criou.
 
-================================================================================
+---
+
+## Stack Tecnológico
+
+Este software foi desenvolvido utilizando:
+* **Linguagem:** Python 3.x
+* **Interface (GUI):** Kivy Framework
+* **Compilação:** PyInstaller
